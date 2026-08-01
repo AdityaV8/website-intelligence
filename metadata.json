@@ -1,0 +1,6 @@
+{
+  "name": "Website Intelligence",
+  "description": "Comprehensive Network, DNS, WHOIS, SSL Security, Geolocation & Website Information Analysis Dashboard",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
