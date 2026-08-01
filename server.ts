@@ -477,8 +477,8 @@ app.get("/api/lookup", async (req, res) => {
       ip: {
         ipv4: primaryIpv4,
         ipv6: primaryIpv6,
-        allIpv4: aRecords.map((r) => r.data),
-        allIpv6: aaaaRecords.map((r) => r.data),
+        allIpv4: aRecords.length > 0 ? aRecords.map((r: any) => r.data) : [],
+        allIpv6: aaaaRecords.length > 0 ? aaaaRecords.map((r: any) => r.data) : [],
       },
       hosting: geoInfo ? {
         country: geoInfo.country,
